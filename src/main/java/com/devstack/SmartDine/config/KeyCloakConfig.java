@@ -9,8 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestClient;
 
 @Configuration
-@EnableConfigurationProperties
-
+@EnableConfigurationProperties(KeyCloakConfig.KeyCloakProperties.class)
 public class KeyCloakConfig {
       @Bean
     public RestClient KeyCloakRestClient(KeyCloakProperties properties){
@@ -30,6 +29,7 @@ public class KeyCloakConfig {
           private Admin admin = new Admin();
 
           @Getter
+
           @Setter
           public static class Admin {
               private String username;
@@ -38,7 +38,6 @@ public class KeyCloakConfig {
 
       }
 }
-
 /*
 ==========================================================
  KEYCLOAKCONFIG.JAVA - STEP BY STEP EXPLANATION
