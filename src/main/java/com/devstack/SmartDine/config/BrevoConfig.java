@@ -50,7 +50,7 @@ public class BrevoConfig {
 
 /*
 ==========================================================
- BREVOCONFIG.JAVA - STEP BY STEP EXPLANATION
+ BREVOCONFIG.JAVA - STEP BY STEP EXPLANATION (using for email settings)
 ==========================================================
 */
 
